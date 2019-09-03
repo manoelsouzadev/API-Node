@@ -5,6 +5,8 @@ const app = express();
 
 //Conencta ao banco
 mongoose.connect("mongodb+srv://manoel:mongodbnosql@cluster0-4lzxg.mongodb.net/test?retryWrites=true&w=majority");
+
+const product = require('./models/product');
 //Carrega as rotas
 const indexRoute = require('./routes/index-route');
 const productRoute = require('./routes/product-route');
