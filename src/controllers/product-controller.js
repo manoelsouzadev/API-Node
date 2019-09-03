@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const Product = mongoose.model("product");
 
 exports.get = (req, res, next) => {
-  Product.find({}).then(data => {
+  Product.find({ active: true }, "title price slug" ).then(data => {
     res.status(200).send(data);
 
   }).catch(e => {
