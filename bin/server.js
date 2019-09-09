@@ -3,7 +3,7 @@ const app = require('../src/app');
 const debug = require('debug')('apinode:server');
 const http = require('http');
 
-const port = normalizePort(process.env.PORT || '13000');
+const port = normalizePort(process.env.PORT || '7200');
 app.set('port', port)
 
 const server = http.createServer(app);
