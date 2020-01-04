@@ -1,11 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const db = require('../config/db');
 const app = express();
 
 //Conencta ao banco
 mongoose.connect(
-  'mongodb+srv://manoel:mongodbnosql@cluster0-4lzxg.mongodb.net/test?retryWrites=true&w=majority'
+  db.mongoURI
 );
 
 const product = require('./models/product');
