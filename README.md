@@ -12,4 +12,4 @@ if(process.env.NODE_ENV == "production"){
 }
 //Para ter uma URI é necessário ter um banco NoSql rodando localmente ou on-line
 ~~~
-2. Rode esta aplicação com o comando node app.js ou npm start
+2. Rode esta aplicação com o comando **node app.js** ou **npm start**
