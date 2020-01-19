@@ -16,4 +16,5 @@ if(process.env.NODE_ENV == "production"){
 
 **Tecnologias utilizadas:**
 * NodeJS
+* Express
 * MongoDB
