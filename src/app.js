@@ -5,11 +5,12 @@ const db = require('../config/db');
 const app = express();
 
 //Conencta ao banco
-mongoose.connect(
-  db.mongoURI
-);
+mongoose.connect(db.mongoURI);
 
-const product = require('./models/product');
+const Product = require('./models/product');
+const Customer = require('./models/customer');
+const Order = require('./models/order');
+
 //Carrega as rotas
 const indexRoute = require('./routes/index-route');
 const productRoute = require('./routes/product-route');
