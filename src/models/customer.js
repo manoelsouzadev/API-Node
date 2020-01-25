@@ -18,4 +18,4 @@ const schema = new Schema({
   }
 });
 
-module.exports = mongoose.model('customer', schema);
+module.exports = mongoose.model('Customer', schema);
