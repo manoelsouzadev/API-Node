@@ -10,7 +10,7 @@ if(process.env.NODE_ENV == "production"){
 }else{
   module.exports = { URI de conexão com seu banco de dados NoSql }
 }
-//Para ter uma URI é necessário ter um banco NoSql rodando localmente ou on-line
+//Para ter uma URI é necessário ter um banco MongoDB rodando localmente ou on-line
 ~~~
 2. Rode esta aplicação com o comando **node app.js** ou **npm start**
 
