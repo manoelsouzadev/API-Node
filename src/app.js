@@ -1,11 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const db = require('../config/db');
+const config = require('./config');
 const app = express();
 
 //Conencta ao banco
-mongoose.connect(db.mongoURI);
+mongoose.connect(config.connectionString);
 
 const Product = require('./models/product');
 const Customer = require('./models/customer');
