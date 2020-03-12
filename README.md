@@ -3,14 +3,18 @@ API NodeJS desenvolvida para aprendizado da tecnologia, com base no curso do bal
 
 **Para rodar a API, siga os passos abaixo:**
 
-1.Crie uma pasta chamada **config** na raíz do projeto, e dentro da pasta **config**,  crie um arquivo **db.js com o seguinte código abaixo:**
+1.**Crie um arquivo** chamado **config.js** na **raíz do projeto**, e dentro do arquivo, **coloque o seguinte código**:
 ~~~javascript
-if(process.env.NODE_ENV == "production"){
-	module.exports = { URI de conexão com seu banco de dados NoSql }
-}else{
-  module.exports = { URI de conexão com seu banco de dados NoSql }
-}
-//Para ter uma URI é necessário ter um banco MongoDB rodando localmente ou on-line
+global.SALT_KEY = 'f5b96262-5604-4cd3-95f2-05e78e5761ef'; // exemplo
+global.EMAIL_TMPL = 'Olá, <strong> {0}</strong>, seja bem vindo à Node Store!';
+
+module.exports = {
+  connectionString: 'MONGO CONNECTION STRING',
+  sendgridKey: 'SENDGRID CONNECTION STRING',
+  containerConnectionString: 'AZURE CONNECTION STRING'
+};
+ 
+//Para ter uma Connection String Mongo é necessário ter um banco de dados executado localmente ou remoto. Para as plataformas Sendgrid e Azure é necessário possuir conta em ambas as plataformas.
 ~~~
 2. Rode esta aplicação com o comando **node app.js** ou **npm start**
 
