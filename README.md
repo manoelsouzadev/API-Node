@@ -15,7 +15,7 @@ module.exports = {
 };
  
 //Para ter uma Connection String Mongo é necessário ter um banco de dados executado localmente ou remoto. 
-Para as plataformas Sendgrid e Azure é necessário possuir conta em ambas as plataformas.
+//Para as plataformas Sendgrid e Azure é necessário possuir conta em ambas as plataformas.
 ~~~
 2. Rode esta aplicação com o comando **node app.js** ou **npm start**
 
