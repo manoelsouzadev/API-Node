@@ -23,3 +23,4 @@ module.exports = {
 * NodeJS
 * Express
 * MongoDB
+* Storage of Microsoft Azure
