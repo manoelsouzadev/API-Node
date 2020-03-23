@@ -108,12 +108,13 @@ exports.post = async (req, res, next) => {
       price: req.body.price,
       active: true,
       tags: req.body.tags,
-      // image: 'https://nodestrg.blob.core.windows.net/product-images/' + filename
+      image: 'https://nodestrg.blob.core.windows.net/product-images/' + filename
     });
     res.status(201).send({
       message: 'Produto cadastrado com sucesso!'
     });
   } catch (e) {
+    console.log(e);
     res.status(500).send({
       message: 'Falha ao processar sua requisição'
     });

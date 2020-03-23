@@ -11,7 +11,12 @@ const server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-console.log('API rodando na  porta ' + port);
+console.log(`API rodando na  porta ${ port }`);
+
+//O código acima pode ser substituído pelo código subsequente
+// app.listen(port, () => console.log(`API rodando na porta ${ port }`));
+// app.on('error', onError);
+// app.on('listening', onListening);
 
 function normalizePort(val){
     const port = parseInt(val, 10);
