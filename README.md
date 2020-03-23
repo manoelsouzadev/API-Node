@@ -14,7 +14,8 @@ module.exports = {
   containerConnectionString: 'AZURE CONNECTION STRING'
 };
  
-//Para ter uma Connection String Mongo é necessário ter um banco de dados executado localmente ou remoto. Para as plataformas Sendgrid e Azure é necessário possuir conta em ambas as plataformas.
+//Para ter uma Connection String Mongo é necessário ter um banco de dados executado localmente ou remoto. 
+//Para as plataformas Sendgrid e Azure é necessário possuir conta em ambas as plataformas.
 ~~~
 2. Rode esta aplicação com o comando **node app.js** ou **npm start**
 
@@ -22,3 +23,4 @@ module.exports = {
 * NodeJS
 * Express
 * MongoDB
+* Storage of Microsoft Azure
