@@ -24,3 +24,4 @@ module.exports = {
 * Express
 * MongoDB
 * Storage of Microsoft Azure
+* SendGrid Mail Service
